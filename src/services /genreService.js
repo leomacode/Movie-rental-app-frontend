@@ -1,5 +1,6 @@
 import http from "./httpService";
 
+const endPoint = "/genres";
 export function getGenres() {
-  return http.get("http://localhost:3900/api/genres");
+  return http.get(endPoint);
 }
