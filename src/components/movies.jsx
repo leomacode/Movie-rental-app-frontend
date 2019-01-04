@@ -163,7 +163,11 @@ class Movies extends Component {
         </div>
       );
 
-    return <p>There are no movies in the database</p>;
+    return (
+      <div className="spinner-border text-primary" role="status">
+        <span className="sr-only">Loading...</span>
+      </div>
+    );
   };
 
   render() {
